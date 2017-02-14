@@ -35,7 +35,7 @@ dealClicked: function() {
     return {
       hand: ["face_down","face_down","face_down","face_down","face_down"]
     }
-
+},
   render: function() {
     return (
     <div>
@@ -58,11 +58,11 @@ v>
 var App = React.createClass({
 getInitialState: function() {
   return {
-   Card1 face={this.state.hand[0]}/>
-   Card2 face={this.state.hand [1]}/>
-   Card3 face={this.state.hand[2]}/>
-   Card4 face={this.state.hand[3]}/>
-   Card5 face={this.state.hand[4]}/>
+    <Card  face={this.state.hand[0]}/>
+    <Card  face={this.state.hand[1]}/>
+    <Card  face={this.state.hand[2]}/>
+    <Card  face={this.state.hand[3]}/>
+    <Card  face={this.state.hand[4]}/>
 
 },
 
