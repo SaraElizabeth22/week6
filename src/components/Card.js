@@ -8,7 +8,11 @@ var Card = React.createClass({
 
     return (
         <div className="col-sm-2">
-          <h1><img onClick={this.Card} className="img-responsive" src={this.hand.Card} /></h1>
+          <h1><img onClick={this.Card} className="img-responsive" src={this.props.face} </h1>
+        </div>
+
+        <div className ="col-sm-2">
+            <h1><a href-"#" className="btn btn-success">Desl</a></h1>
         </div>
 
     )

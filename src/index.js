@@ -23,26 +23,51 @@ var Card = require('./components/Card')
 // END OF STUFF TO NOT MODIFY
 
 var App = React.createClass({
-  render: function(){
-  var Deck = getDeck().prototype.shuffle
+dealClicked: function() {
+  this.setState({
+    hand: getDeck().shuffle().splice(0,5)
+})
 },
 
 
+  getInitialState: function() {
+  render: function(){
+    return {
+      hand: ["face_down","face_down","face_down","face_down","face_down"]
+    }
+
+  render: function() {
+    return (
+    <div>
+        <h1> Welcome to Sara's Casino! </h1>
+        <div className="row">
+          <Card/>
+            <Card face={this.state.Card1}/>
+            <Card face={this.state.Card2}/>
+            <Card face={this.state.Card3}/>
+            <Card face={this.state.Card4}/>
+            <Card face={this.state.Card5}/>
+        </di
+        <h1><a href-"#" onClick={this.dealClicked} className="btn btn-success">Desl</a></h1>
+v>
+      </div>
+    )
+  var Deck = getDeck().prototype.shuffle
+},
+
+var App = React.createClass({
 getInitialState: function() {
-  return { Card: [this.state.hand}
-     <Card hand={this.state.hand[0]}/>
-     <Card hand={this.state.hand[1]}/>
-     <Card hand={this.state.hand[2]}/>
-     <Card hand={this.state.hand[3]}/>
-     <Card hand={this.state.hand[4]}/>
+  return {
+   Card1 face={this.state.hand[0]}/>
+   Card2 face={this.state.hand [1]}/>
+   Card3 face={this.state.hand[2]}/>
+   Card4 face={this.state.hand[3]}/>
+   Card5 face={this.state.hand[4]}/>
 
 },
 
   Card: function() {
     this.setState({
       getDeck: Card
-
-getDeck().shuffle().splice(0,5)
-    })
 
 ReactDOM.render(<App />, document.getElementById("app")),
